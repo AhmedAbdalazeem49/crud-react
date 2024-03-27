@@ -1,0 +1,94 @@
+/* Styles for course item */
+.course-item {
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for course name */
+.course-item span {
+  flex-grow: 1;
+  font-size: 18px;
+}
+
+/* Styles for buttons */
+.course-item button {
+  padding: 8px 16px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.edit-button {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.edit-button:hover {
+  background-color: #e0a800;
+}
+
+/* Styles for delete button */
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Styles for update form */
+.update-form {
+  margin-top: 10px;
+}
+
+.update-form input[type="text"] {
+  width: calc(100% - 100px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.update-form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.update-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .course-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .course-item span {
+    margin-bottom: 10px;
+  }
+
+  .course-item button {
+    margin: 5px 0;
+  }
+
+  .update-form input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
