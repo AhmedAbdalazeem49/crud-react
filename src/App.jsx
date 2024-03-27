@@ -50,7 +50,7 @@ class App extends Component {
   render() {
     return (
       <section className="App">
-        <h2>Courses <span>CRUD</span></h2>
+        <h2>Courses CRUD</h2>
         <Form
           updateCourse={this.updateCourse}
           addCourse={this.addCourse}
